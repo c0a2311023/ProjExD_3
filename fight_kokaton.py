@@ -133,7 +133,7 @@ class Score:
         self.fonto = pg.font.SysFont("hgp創英角ﾎﾟｯﾌﾟ体", 30)
         self.score = 0
         self.img = self.fonto.render("Score : ", 0, (0, 0, 255))
-        self.zahyou = [100, HEIGHT-50]
+        self.cie = [100, HEIGHT-50]  # スコアを表示する座標の変数
     
     def update(self, screen:pg.Surface):
         self.img = self.fonto.render("Score : ", 0, (0, 0, 255))
